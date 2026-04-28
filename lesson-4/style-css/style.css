@@ -1,0 +1,47 @@
+body {
+  background-color: aqua;
+  background-size: cover;
+}
+
+div > p {
+  color: snow;
+}
+
+span {
+  color: teal;
+}
+
+.box-class {
+  color: lightslategray;
+}
+
+#unique_id {
+  color: black;
+}
+
+[data-type="special"] {
+  color: blue;
+}
+
+.parent p {
+  color: blue;
+}
+
+.container > div {
+  color: yellow;
+}
+
+.item.highlighted {
+  color: brown;
+}
+p.text-bold[title="hint"] {
+  color: black;
+}
+
+.wrapper > span[data-status="active"] {
+  color: green;
+}
+
+#main-footer span {
+  color: saddlebrown;
+}

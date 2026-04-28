@@ -1,0 +1,263 @@
+body {
+  background-image:
+    url("img-style/pexels-artempodrez-7232842.jpg"),
+    url("img-style/pexels-artempodrez-7233099.jpg");
+
+  background-position:
+    top right,
+    center;
+  background-repeat: no-repeat, no-repeat;
+  background-size:
+    200px auto,
+    cover;
+  background-attachment: fixed, fixed;
+
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+nav div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-button {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  color: #ffffff;
+  background-color: #34495e;
+
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: 2px solid transparent;
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  background-color: #ffffff;
+  color: #34495e;
+  border-color: #34495e;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.menu-button:active {
+  background-color: #1abc9c;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  color: #333;
+}
+
+article h2 a {
+  font-family: "trebuchet MS", sans-serif;
+  color: #ce5d0a;
+  text-decoration: none;
+}
+
+article h2 {
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.article-description {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.read-more {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.read-more:hover {
+  text-decoration: none;
+  color: #ff0000;
+}
+
+.go-to-comments {
+  color: gray;
+  text-decoration: none;
+}
+
+.article h2 {
+  text-align: center !important;
+  margin-bottom: 30px;
+}
+.article p::first-letter {
+  font-family: "Georgia", serif !important;
+  font-size: 2.5em !important;
+  color: #e74c3c !important;
+  float: left;
+  margin-right: 8px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.container > ul,
+.container > ul li ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.container > ul {
+  width: 450px;
+  background-color: #fdf2f2;
+  padding: 25px 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.container > ul > li {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.container > ul > li::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background-image: url("img-style/cherry-blossom.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container > ul li ul {
+  background-color: #ffffff;
+  padding: 10px 15px;
+  margin: 10px 0 0 35px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.container > ul li ul li {
+  font-size: 18px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.container > ul li ul li::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  background-image: url("img-style/record.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.new-label::after {
+  content: "New";
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #e74c3c;
+  padding: 2px 8px;
+  margin-left: 10px;
+  border-radius: 10px;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+body.gallery-page {
+  background-image: url("../css/img-style/pexels-artempodrez-7233099.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.gallery-item {
+  margin-bottom: 30px;
+  display: inline-block;
+  padding: 10px;
+}
+.gallery-item img {
+  border: 8px solid #2c3e50;
+  transition: border-color 0.3s ease;
+  display: block;
+}
+
+.gallery-item img:hover {
+  border-color: transparent;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+}
+fieldset {
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.fullname-input {
+  text-transform: capitalize;
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+  outline: 2px dashed #e74c3c;
+  outline-offset: 3px;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.form-buttons button {
+  padding: 10px 20px;
+  cursor: pointer;
+}

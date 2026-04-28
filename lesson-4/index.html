@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+
+  <link rel="stylesheet" href="style-css/style.css">
+</head>
+
+<body>
+  <h1>Заголовок першого рівня</h1>
+
+  <div>
+    <p>Застосовується до тегів р, вкладених у div, на першому рівні, вага 2.</p>
+  </div>
+
+  <span>Елемент 1: Селектор тегу, вага 1</span>
+
+  <div class="box-class">Елемент 2: Селектор класу, вага 10</div>
+
+  <div id="unique-id">Елемент 3: Селектор ідентифікатора, вага 100</div>
+
+  <div data-type="special">Елемент 4: Селектор атрибуту, вага 10</div>
+
+  <section class="parent">
+    <h2>Заголовок секции</h2>
+
+    <p>Елемент 5: вкладений селектор р, в середині секції, вага 2</p>
+  </section>
+
+  <article class="container">
+    <h2>Заголовок статьи</h2>
+    <div>Елемент 6: Дочірній селектор, пряма наслідуваність. вага 11</div>
+  </article>
+
+  <div class="item highlighted">Елемент 7: Послідовність, два класи разом, вага 20</div>
+
+  <p class="text-bold" title="hint">Елемент 8: Тег + клас + атрибут, вага 21</p>
+
+  <div class="wrapper">
+    <span data-status="active">Елемент 9: Клас > тег[атрибут], вага 21</span>
+  </div>
+
+  <footer id="main-footer">
+    <span>Елемент 10: ID + вкладений тег, вага 101</span>
+  </footer>
+</body>
+
+</html>
